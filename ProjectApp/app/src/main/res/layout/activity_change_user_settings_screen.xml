@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_user_settings_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.omer.projectapp.ChangeUserSettingsScreen">
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/saveButton"
+        android:onClick="savePress"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="52dp"
+        android:id="@+id/saveButton"
+        android:hint="Username"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/RepeatPassword"
+        android:hint="Repeat Password"
+        android:layout_below="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:text="Password must have:\nAt least 8 letters.\nOnly English Letters.\nAt Least on number.\nAt least one letter uppercase.\nAt least one sign."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PasswordMust"
+        android:height="110dp"
+        android:width="220dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/RepeatPassword"
+        android:layout_alignStart="@+id/RepeatPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/Password"
+        android:hint="Password"
+        android:layout_below="@+id/saveButton"
+        android:layout_alignStart="@+id/saveButton" />
+
+</RelativeLayout>

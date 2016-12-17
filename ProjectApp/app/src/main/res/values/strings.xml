@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ProjectApp</string>
+    <string name="title_activity_sign_in_screen">SignInScreen</string>
+</resources>
